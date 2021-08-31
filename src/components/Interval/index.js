@@ -1,9 +1,12 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
 import Card from '../Card';
 
+import { changeMinValue, changeMaxValue } from '../../redux/store/actions/numberActions';
+
 import { InputContainer } from './styles';
-const Interval = ({ min, max, onMinChanged, onMaxChanged }) => {
+const Interval = ({ changeMax, changeMin, min, max }) => {
     return (
         <Card title="Intervalo de números">
             <InputContainer>
@@ -11,7 +14,7 @@ const Interval = ({ min, max, onMinChanged, onMaxChanged }) => {
                 <input
                     type="number"
                     value={min}
-                    onChange={event => onMinChanged(Number(event.target.value))}
+                    onChange={event => changeMin(Number(event.target.value))}
                 />
             </InputContainer>
 
@@ -20,11 +23,30 @@ const Interval = ({ min, max, onMinChanged, onMaxChanged }) => {
                 <input
                     type="number"
                     value={max}
-                    onChange={event => onMaxChanged(Number(event.target.value))}
+                    onChange={event => changeMax(Number(event.target.value))}
                 />
             </InputContainer>
         </Card>
     );
 }
 
-export default Interval;
+const mapStateToProps = (state) => ({
+    min: state.numbers.min,
+    max: state.numbers.max
+});
+
+function mapDispatchToProps(dispatch) {
+    return {
+        changeMin(newNumber) {
+            const action = changeMinValue(newNumber);
+            dispatch(action);
+        },
+
+        changeMax(newNumber) {
+            const action = changeMaxValue(newNumber);
+            dispatch(action);
+        }
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Interval);
