@@ -2,11 +2,12 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
+  flex: 1;
   flex-direction: column;
   margin: 5px;
   background-color: #fff;
-  width: 100%;
   align-items: center;
+  width: 330px;
 `;
 
 export const CardHeader = styled.div`

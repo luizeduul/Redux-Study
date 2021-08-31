@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import Interval from '../../components/Interval';
 import Average from '../../components/Average';
@@ -8,24 +8,18 @@ import Sorteio from '../../components/Sorteio';
 import { Container, CardLine } from './styles';
 
 const Home = () => {
-  const [min, setMin] = useState(1);
-  const [max, setMax] = useState(10);
+
   return (
     <Container>
       <CardLine>
-        <Interval 
-          min={min} 
-          max={max} 
-          onMinChanged={setMin} 
-          onMaxChanged={setMax}
-        />
+        <Interval/>
       </CardLine>
       <CardLine>
-        <Average min={min} max={max}></Average>
+        <Average />
 
-        <Sum min={min} max={max}/>
+        <Sum />
 
-        <Sorteio min={min} max={max}/>
+        <Sorteio />
       </CardLine>
     </Container>
   )

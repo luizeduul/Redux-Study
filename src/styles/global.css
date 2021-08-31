@@ -2,8 +2,7 @@
   border: 0;
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-  font-smooth: antialiased;
+  
 }
 
 body{
@@ -11,5 +10,6 @@ body{
   background-color: #222;
   font-family: 'Roboto' sans-serif;
   font-size: 2rem;
-  align-items: center;
+  box-sizing: border-box;
+  font-smooth: antialiased;
 }
