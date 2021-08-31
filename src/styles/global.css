@@ -6,8 +6,7 @@
 }
 
 body{
-  display: flex;
-  background-color: #222;
+  background-color: #CCC;
   font-family: 'Roboto' sans-serif;
   font-size: 2rem;
   box-sizing: border-box;
