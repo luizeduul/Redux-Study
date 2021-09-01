@@ -1,0 +1,3 @@
+export const CHANGE_MIN_VALUE = 'CHANGE_MIN_VALUE';
+export const CHANGE_MAX_VALUE = 'CHANGE_MAX_VALUE';
+

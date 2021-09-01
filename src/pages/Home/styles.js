@@ -7,5 +7,4 @@ export const Container = styled.div`
 
 export const CardLine = styled.div`
   display: flex;
-  
 `;

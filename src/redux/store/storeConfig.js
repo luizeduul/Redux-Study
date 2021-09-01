@@ -1,8 +1,8 @@
 import { createStore, combineReducers } from 'redux';
-import numberReducer from './reducers/numberReducer';
+import numbersReducer from './reducers/numberReducer';
 
 const reducers = combineReducers({
-  numbers: numberReducer
+  numbers: numbersReducer
 });
 
 function storeConfig() {

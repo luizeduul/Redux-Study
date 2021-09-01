@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.span`
-    
+    color: #fff;
     strong{
         font-size: 1.8rem;
     }

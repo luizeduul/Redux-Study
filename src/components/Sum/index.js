@@ -7,7 +7,7 @@ import { Container } from './styles';
 
 const Sum = ({ min, max }) => {
     return (
-        <Card title="Soma de números">
+        <Card title="Soma de números" background="#2567F6">
             <Container>
                 <span>Resultado: </span>
                 <strong>{max + min}</strong>
