@@ -8,7 +8,7 @@ import { changeMinValue, changeMaxValue } from '../../redux/store/actions/number
 import { InputContainer } from './styles';
 const Interval = ({ changeMax, changeMin, min, max }) => {
     return (
-        <Card title="Intervalo de números">
+        <Card title="Intervalo de números" background="#FC3F04">
             <InputContainer>
                 <strong>Valor mínimo: </strong>
                 <input

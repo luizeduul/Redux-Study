@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <Container>
       <CardLine>
-        <Interval/>
+        <Interval />
       </CardLine>
       <CardLine>
         <Average />

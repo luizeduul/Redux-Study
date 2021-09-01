@@ -8,13 +8,13 @@ import { Container } from './styles';
 const Sorteio = ({ min, max }) => {
     const random = parseInt(Math.random() * (max - min)) + min;
     return (
-        <Card title="Sorteio de um número">
+        <Card title="Sorteio de um número" background="#383994">
             <Container>
                 <span>Resultado: </span>
                 <strong>{random}</strong>
             </Container>
         </Card>
-    )
+    );
 }
 
 const mapStateToProps = (state) => ({

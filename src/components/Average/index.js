@@ -7,7 +7,7 @@ import { Container } from './styles';
 const Average = ({ min, max }) => {
 
     return (
-        <Card title="Média de números">
+        <Card title="Média de números" background="#2C8983">
             <Container>
                 <span>Resultado: </span>
                 <strong>{(max + min) / 2}</strong>

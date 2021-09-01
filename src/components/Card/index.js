@@ -2,9 +2,9 @@ import React from 'react';
 
 import { Container, CardHeader, CardContent } from './styles';
 
-const Card = ({title, children}) => {
+const Card = ({title, children, background}) => {
   return (
-    <Container>
+    <Container background={background}>
       <CardHeader>
         <span>
           {title}
